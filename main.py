@@ -30,8 +30,11 @@ def list_tasks():
   Função para listar todas as tarefas da lista.
 
   """
-  for task in tasks:
-    print(task)
+  if len(tasks) > 0:
+    for task in tasks:
+      print(task)
+  else:
+    print("Não há tarefas na lista.")
 
 def remove_task(task_id: int):
   """
